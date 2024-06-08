@@ -676,193 +676,140 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado:");
+			System.out.println("\nTotales acumulados Neto Gravado con IVA:");
 
 			System.out.println("\nFacturas A");
 
 			System.out.println("Total Factura A Responsable Inscripto (RI) Positivos: "
-					+ formattedTotalFacturaAResponsableInscriptoPositivos);
-			System.out.println("Total Factura A Responsable Inscripto (RI) Negativos: "
-					+ formattedTotalFacturaAResponsableInscriptoNegativos);
-			System.out.println(
-					"Total Factura A Responsable Inscripto (RI): " + formattedTotalFacturaAResponsableInscripto);
-			System.out.println(
-					"Total Factura A Monotributista Positivos: " + formattedTotalFacturaAMonotributistaPositivos);
-			System.out.println(
-					"Total Factura A Monotributista Negativos: " + formattedTotalFacturaAMonotributistaNegativos);
-			System.out.println("Total Factura A Monotributista: " + formattedTotalFacturaAMonotributista);
-			System.out.println("Total Factura A Exentos No Alcanzados Positivos: "
-					+ formattedTotalFacturaAExentosNoAlcanzadosPositivos);
-			System.out.println("Total Factura A Exentos No Alcanzados Negativos: "
-					+ formattedTotalFacturaAExentosNoAlcanzadosNegativos);
-			System.out.println("Total Factura A Exentos No Alcanzados: " + formattedTotalFacturaAExentosNoAlcanzados);
-			System.out.println(
-					"Total Factura A Positivos (sin Facturas Z positivas): " + formattedTotalFacturaAPositivos);
-			System.out.println(
-					"Total Factura A Negativos (sin Facturas Z negativas): " + formattedTotalFacturaANegativos);
-			System.out.println("Total Factura A (sin Facturas Z): " + formattedTotalFacturaA);
-
-			System.out.println("\nFacturas B");
-
-			System.out.println(
-					"Total Factura B Consumidor Final Positivos: " + formattedTotalFacturaBConsumidorFinalPositivos);
-			System.out.println(
-					"Total Factura B Consumidor Final Negativos: " + formattedTotalFacturaBConsumidorFinalNegativos);
-			System.out.println("Total Factura B Consumidor Final: " + formattedTotalFacturaBConsumidorFinal);
-			System.out.println(
-					"Total Factura B Monotributista Positivos: " + formattedTotalFacturaBMonotributistaPositivos);
-			System.out.println(
-					"Total Factura B Monotributista Negativos: " + formattedTotalFacturaBMonotributistaNegativos);
-			System.out.println("Total Factura B Monotributista: " + formattedTotalFacturaBMonotributista);
-			System.out.println("Total Factura B Exentos No Alcanzados Positivos: "
-					+ formattedTotalFacturaBExentosNoAlcanzadosPositivos);
-			System.out.println("Total Factura B Exentos No Alcanzados Negativos: "
-					+ formattedTotalFacturaBExentosNoAlcanzadosNegativos);
-			System.out.println("Total Factura B Exentos No Alcanzados: " + formattedTotalFacturaBExentosNoAlcanzados);
-			System.out.println(
-					"Total Factura B Positivos (sin Facturas Z positivas): " + formattedTotalFacturaBPositivos);
-			System.out.println(
-					"Total Factura B Negativos (sin Facturas Z negativas): " + formattedTotalFacturaBNegativos);
-			System.out.println("Total Factura B (sin facturas Z): " + formattedTotalFacturaB);
-
-			System.out.println("\nFacturas Z");
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos: " + formattedTotalFacturaZ_A_Positivos);
-			System.out.println("Total Factura Z Que Son Factura A Negativos: " + formattedTotalFacturaZ_A_Negativos);
-			System.out.println("Total Factura Z Que Son Factura A: " + formattedTotalFacturaZ_A);
-			System.out.println("Total Factura Z Que Son Factura B Positivos: " + formattedTotalFacturaZ_B_Positivos);
-			System.out.println("Total Factura Z Que Son Factura B Negativos: " + formattedTotalFacturaZ_B_Negativos);
-			System.out.println("Total Factura Z Que Son Factura B: " + formattedTotalFacturaZ_B);
-			System.out.println("Total Factura Z Positivos: " + formattedTotalFacturaZPositivos);
-			System.out.println("Total Factura Z Negativos: " + formattedTotalFacturaZNegativos);
-			System.out.println("Total Factura Z: " + formattedTotalFacturaZ);
-
-			System.out.println("Total Factura A Positivos (con Facturas Z que son A Positivos): "
-					+ formattedTotalFacturaAPositivosFacturaZ_A_Positivos);
-			System.out.println("Total Factura A Negativos (con Facturas Z que son A Negativos): "
-					+ formattedTotalFacturaANegativosFacturaZ_A_Negativos);
-			System.out.println("Total Factura A (con Facturas Z que son A): " + formattedTotalFacturaAFacturaZ_A);
-
-			System.out.println("Total Factura B Positivos (con Facturas Z que son B Positivos): "
-					+ formattedTotalFacturaBPositivosFacturaZ_B_Positivos);
-			System.out.println("Total Factura B Negativos (con Facturas Z que son B Negativos): "
-					+ formattedTotalFacturaBNegativosFacturaZ_B_Negativos);
-			System.out.println("Total Factura B (con Facturas Z que son B): " + formattedTotalFacturaBFacturaZ_B);
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos Responsable Inscripto : "
-					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscripto);
-			System.out.println("Operaciones con responsables Inscriptos): " + formattedOpRi);
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos Monotributistas: "
-					+ formattedTotalFacturaZ_A_Positivos_Monotributistas);
-			System.out.println("Total Factura Z Que Son Factura B Positivos Monotributistas: "
-					+ formattedTotalFacturaZ_B_Positivos_Monotributistas);
-
-			System.out.println("Total Factura Z Que son Factura B Positivos Consumidores Finales: "
-					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinales);
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos Exentos No Alcanzados: "
-					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzados);
-
-			System.out.println("Total Factura Z Que son Factura B Positivos Exentos No Alcanzados: "
-					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzados);
-
-			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentos);
-
-			System.out.println("\nTotales acumulados IVA:");
-
-			System.out.println("\nFacturas A");
-
-			System.out.println("Total Factura A Responsable Inscripto (RI) Positivos: "
+					+ formattedTotalFacturaAResponsableInscriptoPositivos + " \tIVA\t "
 					+ formattedTotalFacturaAResponsableInscriptoPositivosIva);
 			System.out.println("Total Factura A Responsable Inscripto (RI) Negativos: "
+					+ formattedTotalFacturaAResponsableInscriptoNegativos + " \tIVA\t "
 					+ formattedTotalFacturaAResponsableInscriptoNegativosIva);
+			System.out
+					.println("Total Factura A Responsable Inscripto (RI): " + formattedTotalFacturaAResponsableInscripto
+							+ " \tIVA\t " + formattedTotalFacturaAResponsableInscriptoIva);
 			System.out.println(
-					"Total Factura A Responsable Inscripto (RI): " + formattedTotalFacturaAResponsableInscriptoIva);
+					"Total Factura A Monotributista Positivos: " + formattedTotalFacturaAMonotributistaPositivos
+							+ " \tIVA\t " + formattedTotalFacturaAResponsableInscriptoIva);
 			System.out.println(
-					"Total Factura A Monotributista Positivos: " + formattedTotalFacturaAMonotributistaPositivosIva);
-			System.out.println(
-					"Total Factura A Monotributista Negativos: " + formattedTotalFacturaAMonotributistaNegativosIva);
-			System.out.println("Total Factura A Monotributista: " + formattedTotalFacturaAMonotributistaIva);
+					"Total Factura A Monotributista Negativos: " + formattedTotalFacturaAMonotributistaNegativos
+							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaNegativosIva);
+			System.out.println("Total Factura A Monotributista: " + formattedTotalFacturaAMonotributista + " \tIVA\t "
+					+ formattedTotalFacturaAMonotributistaIva);
 			System.out.println("Total Factura A Exentos No Alcanzados Positivos: "
+					+ formattedTotalFacturaAExentosNoAlcanzadosPositivos + " \tIVA\t "
 					+ formattedTotalFacturaAExentosNoAlcanzadosPositivosIva);
 			System.out.println("Total Factura A Exentos No Alcanzados Negativos: "
+					+ formattedTotalFacturaAExentosNoAlcanzadosNegativos + " \tIVA\t "
 					+ formattedTotalFacturaAExentosNoAlcanzadosNegativosIva);
-			System.out
-					.println("Total Factura A Exentos No Alcanzados: " + formattedTotalFacturaAExentosNoAlcanzadosIva);
-			System.out.println(
-					"Total Factura A Positivos (sin Facturas Z positivas): " + formattedTotalFacturaAPositivosIva);
-			System.out.println(
-					"Total Factura A Negativos (sin Facturas Z negativas): " + formattedTotalFacturaANegativosIva);
-			System.out.println("Total Factura A (sin Facturas Z): " + formattedTotalFacturaAIva);
+			System.out.println("Total Factura A Exentos No Alcanzados: " + formattedTotalFacturaAExentosNoAlcanzados
+					+ " \tIVA\t " + formattedTotalFacturaAExentosNoAlcanzadosIva);
+			System.out.println("Total Factura A Positivos (sin Facturas Z positivas): "
+					+ formattedTotalFacturaAPositivos + " \tIVA\t " + formattedTotalFacturaAPositivosIva);
+			System.out.println("Total Factura A Negativos (sin Facturas Z negativas): "
+					+ formattedTotalFacturaANegativos + " \tIVA\t " + formattedTotalFacturaANegativosIva);
+			System.out.println("Total Factura A (sin Facturas Z): " + formattedTotalFacturaA + " \tIVA\t "
+					+ formattedTotalFacturaAIva);
 
 			System.out.println("\nFacturas B");
 
 			System.out.println(
-					"Total Factura B Consumidor Final Positivos: " + formattedTotalFacturaBConsumidorFinalPositivosIva);
+					"Total Factura B Consumidor Final Positivos: " + formattedTotalFacturaBConsumidorFinalPositivos
+							+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalPositivosIva);
 			System.out.println(
-					"Total Factura B Consumidor Final Negativos: " + formattedTotalFacturaBConsumidorFinalNegativosIva);
-			System.out.println("Total Factura B Consumidor Final: " + formattedTotalFacturaBConsumidorFinalIva);
+					"Total Factura B Consumidor Final Negativos: " + formattedTotalFacturaBConsumidorFinalNegativos
+							+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalNegativosIva);
+			System.out.println("Total Factura B Consumidor Final: " + formattedTotalFacturaBConsumidorFinal
+					+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalIva);
 			System.out.println(
-					"Total Factura B Monotributista Positivos: " + formattedTotalFacturaBMonotributistaPositivosIva);
+					"Total Factura B Monotributista Positivos: " + formattedTotalFacturaBMonotributistaPositivos
+							+ " \tIVA\t " + formattedTotalFacturaBMonotributistaPositivosIva);
 			System.out.println(
-					"Total Factura B Monotributista Negativos: " + formattedTotalFacturaBMonotributistaNegativosIva);
-			System.out.println("Total Factura B Monotributista: " + formattedTotalFacturaBMonotributistaIva);
+					"Total Factura B Monotributista Negativos: " + formattedTotalFacturaBMonotributistaNegativos
+							+ " \tIVA\t " + formattedTotalFacturaBMonotributistaNegativosIva);
+			System.out.println("Total Factura B Monotributista: " + formattedTotalFacturaBMonotributista + " \tIVA\t "
+					+ formattedTotalFacturaBMonotributistaIva);
 			System.out.println("Total Factura B Exentos No Alcanzados Positivos: "
+					+ formattedTotalFacturaBExentosNoAlcanzadosPositivos + " \tIVA\t "
 					+ formattedTotalFacturaBExentosNoAlcanzadosPositivosIva);
 			System.out.println("Total Factura B Exentos No Alcanzados Negativos: "
+					+ formattedTotalFacturaBExentosNoAlcanzadosNegativos + " \tIVA\t "
 					+ formattedTotalFacturaBExentosNoAlcanzadosNegativosIva);
-			System.out
-					.println("Total Factura B Exentos No Alcanzados: " + formattedTotalFacturaBExentosNoAlcanzadosIva);
-			System.out.println(
-					"Total Factura B Positivos (sin Facturas Z positivas): " + formattedTotalFacturaBPositivosIva);
-			System.out.println(
-					"Total Factura B Negativos (sin Facturas Z negativas): " + formattedTotalFacturaBNegativosIva);
-			System.out.println("Total Factura B (sin facturas Z): " + formattedTotalFacturaBIva);
+			System.out.println("Total Factura B Exentos No Alcanzados: " + formattedTotalFacturaBExentosNoAlcanzados
+					+ " \tIVA\t " + formattedTotalFacturaBExentosNoAlcanzadosIva);
+			System.out.println("Total Factura B Positivos (sin Facturas Z positivas): "
+					+ formattedTotalFacturaBPositivos + " \tIVA\t " + formattedTotalFacturaBPositivosIva);
+			System.out.println("Total Factura B Negativos (sin Facturas Z negativas): "
+					+ formattedTotalFacturaBNegativos + " \tIVA\t " + formattedTotalFacturaBNegativosIva);
+			System.out.println("Total Factura B (sin facturas Z): " + formattedTotalFacturaB + " \tIVA\t "
+					+ formattedTotalFacturaBIva);
 
 			System.out.println("\nFacturas Z");
 
-			System.out.println("Total Factura Z Que Son Factura A Positivos: " + formattedTotalFacturaZ_A_PositivosIva);
-			System.out.println("Total Factura Z Que Son Factura A Negativos: " + formattedTotalFacturaZ_A_NegativosIva);
-			System.out.println("Total Factura Z Que Son Factura A: " + formattedTotalFacturaZ_AIva);
-			System.out.println("Total Factura Z Que Son Factura B Positivos: " + formattedTotalFacturaZ_B_PositivosIva);
-			System.out.println("Total Factura Z Que Son Factura B Negativos: " + formattedTotalFacturaZ_B_NegativosIva);
-			System.out.println("Total Factura Z Que Son Factura B: " + formattedTotalFacturaZ_BIva);
-			System.out.println("Total Factura Z Positivos: " + formattedTotalFacturaZPositivosIva);
-			System.out.println("Total Factura Z Negativos: " + formattedTotalFacturaZNegativosIva);
-			System.out.println("Total Factura Z: " + formattedTotalFacturaZIva);
+			System.out.println("Total Factura Z Que Son Factura A Positivos: " + formattedTotalFacturaZ_A_Positivos
+					+ " \tIVA\t " + formattedTotalFacturaZ_A_PositivosIva);
+			System.out.println("Total Factura Z Que Son Factura A Negativos: " + formattedTotalFacturaZ_A_Negativos
+					+ " \tIVA\t " + formattedTotalFacturaZ_A_NegativosIva);
+			System.out.println("Total Factura Z Que Son Factura A: " + formattedTotalFacturaZ_A + " \tIVA\t "
+					+ formattedTotalFacturaZ_AIva);
+			System.out.println("Total Factura Z Que Son Factura B Positivos: " + formattedTotalFacturaZ_B_Positivos
+					+ " \tIVA\t " + formattedTotalFacturaZ_B_PositivosIva);
+			System.out.println("Total Factura Z Que Son Factura B Negativos: " + formattedTotalFacturaZ_B_Negativos
+					+ " \tIVA\t " + formattedTotalFacturaZ_B_NegativosIva);
+			System.out.println("Total Factura Z Que Son Factura B: " + formattedTotalFacturaZ_B + " \tIVA\t "
+					+ formattedTotalFacturaZ_BIva);
+			System.out.println("Total Factura Z Positivos: " + formattedTotalFacturaZPositivos + " \tIVA\t "
+					+ formattedTotalFacturaZPositivosIva);
+			System.out.println("Total Factura Z Negativos: " + formattedTotalFacturaZNegativos + " \tIVA\t "
+					+ formattedTotalFacturaZNegativosIva);
+			System.out.println("Total Factura Z: " + formattedTotalFacturaZ + " \tIVA\t " + formattedTotalFacturaZIva);
 
 			System.out.println("Total Factura A Positivos (con Facturas Z que son A Positivos): "
+					+ formattedTotalFacturaAPositivosFacturaZ_A_Positivos + " \tIVA\t "
 					+ formattedTotalFacturaAPositivosFacturaZ_A_PositivosIva);
 			System.out.println("Total Factura A Negativos (con Facturas Z que son A Negativos): "
+					+ formattedTotalFacturaANegativosFacturaZ_A_Negativos + " \tIVA\t "
 					+ formattedTotalFacturaANegativosFacturaZ_A_NegativosIva);
-			System.out.println("Total Factura A (con Facturas Z que son A): " + formattedTotalFacturaAFacturaZ_AIva);
+			System.out.println("Total Factura A (con Facturas Z que son A): " + formattedTotalFacturaAFacturaZ_A
+					+ " \tIVA\t " + formattedTotalFacturaAFacturaZ_AIva);
 
 			System.out.println("Total Factura B Positivos (con Facturas Z que son B Positivos): "
+					+ formattedTotalFacturaBPositivosFacturaZ_B_Positivos + " \tIVA\t "
 					+ formattedTotalFacturaBPositivosFacturaZ_B_PositivosIva);
 			System.out.println("Total Factura B Negativos (con Facturas Z que son B Negativos): "
+					+ formattedTotalFacturaBNegativosFacturaZ_B_Negativos + " \tIVA\t "
 					+ formattedTotalFacturaBNegativosFacturaZ_B_NegativosIva);
-			System.out.println("Total Factura B (con Facturas Z que son B): " + formattedTotalFacturaBFacturaZ_BIva);
+			System.out.println("Total Factura B (con Facturas Z que son B): " + formattedTotalFacturaBFacturaZ_B
+					+ " \tIVA\t " + formattedTotalFacturaBFacturaZ_BIva);
 
 			System.out.println("Total Factura Z Que Son Factura A Positivos Responsable Inscripto : "
+					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscripto + " \tIVA\t "
 					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscriptoIva);
-			System.out.println("Operaciones con responsables Inscriptos): " + formattedOpRiIva);
+			System.out.println(
+					"Operaciones con responsables Inscriptos): " + formattedOpRi + " \tIVA\t " + formattedOpRiIva);
 
 			System.out.println("Total Factura Z Que Son Factura A Positivos Monotributistas: "
+					+ formattedTotalFacturaZ_A_Positivos_Monotributistas + " \tIVA\t "
 					+ formattedTotalFacturaZ_A_Positivos_MonotributistasIva);
 			System.out.println("Total Factura Z Que Son Factura B Positivos Monotributistas: "
+					+ formattedTotalFacturaZ_B_Positivos_Monotributistas + " \tIVA\t "
 					+ formattedTotalFacturaZ_B_Positivos_MonotributistasIva);
 
 			System.out.println("Total Factura Z Que son Factura B Positivos Consumidores Finales: "
+					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinales + " \tIVA\t "
 					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinalesIva);
 
 			System.out.println("Total Factura Z Que Son Factura A Positivos Exentos No Alcanzados: "
+					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzados + " \tIVA\t "
 					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva);
 
 			System.out.println("Total Factura Z Que son Factura B Positivos Exentos No Alcanzados: "
+					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzados + " \tIVA\t "
 					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva);
 
-			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentosIva);
+			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentos
+					+ " \tIVA\t " + formattedOpCfMonExentosIva);
 
 		} catch (IOException e) {
 			e.printStackTrace();
