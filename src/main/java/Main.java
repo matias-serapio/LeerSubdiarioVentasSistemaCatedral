@@ -691,7 +691,7 @@ public class Main {
 							+ " \tIVA\t " + formattedTotalFacturaAResponsableInscriptoIva);
 			System.out.println(
 					"Total Factura A Monotributista Positivos: " + formattedTotalFacturaAMonotributistaPositivos
-							+ " \tIVA\t " + formattedTotalFacturaAResponsableInscriptoIva);
+							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaPositivosIva);
 			System.out.println(
 					"Total Factura A Monotributista Negativos: " + formattedTotalFacturaAMonotributistaNegativos
 							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaNegativosIva);
