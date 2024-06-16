@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
@@ -1229,341 +1230,6 @@ public class Main {
 				}
 			}
 
-			// Formatear los resultados
-
-			String formattedTotalFacturaAResponsableInscriptoPositivos = String
-					.format("%.2f", totalFacturaAResponsableInscriptoPositivos).replace(".", ",");
-			String formattedTotalFacturaAResponsableInscriptoNegativos = String
-					.format("%.2f", totalFacturaAResponsableInscriptoNegativos).replace(".", ",");
-			String formattedTotalFacturaAResponsableInscripto = String.format("%.2f", totalFacturaAResponsableInscripto)
-					.replace(".", ",");
-			String formattedTotalFacturaAMonotributistaPositivos = String
-					.format("%.2f", totalFacturaAMonotributistaPositivos).replace(".", ",");
-			String formattedTotalFacturaAMonotributistaNegativos = String
-					.format("%.2f", totalFacturaAMonotributistaNegativos).replace(".", ",");
-			String formattedTotalFacturaAMonotributista = String.format("%.2f", totalFacturaAMonotributista)
-					.replace(".", ",");
-			String formattedTotalFacturaAExentosNoAlcanzadosPositivos = String
-					.format("%.2f", totalFacturaAExentosNoAlcanzadosPositivos).replace(".", ",");
-			String formattedTotalFacturaAExentosNoAlcanzadosNegativos = String
-					.format("%.2f", totalFacturaAExentosNoAlcanzadosNegativos).replace(".", ",");
-			String formattedTotalFacturaAExentosNoAlcanzados = String.format("%.2f", totalFacturaAExentosNoAlcanzados)
-					.replace(".", ",");
-			String formattedTotalFacturaAPositivos = String.format("%.2f", totalFacturaAPositivos).replace(".", ",");
-			String formattedTotalFacturaANegativos = String.format("%.2f", totalFacturaANegativos).replace(".", ",");
-			String formattedTotalFacturaA = String.format("%.2f", totalFacturaA).replace(".", ",");
-
-			String formattedTotalFacturaBConsumidorFinalPositivos = String
-					.format("%.2f", totalFacturaBConsumidorFinalPositivos).replace(".", ",");
-			String formattedTotalFacturaBConsumidorFinalNegativos = String
-					.format("%.2f", totalFacturaBConsumidorFinalNegativos).replace(".", ",");
-			String formattedTotalFacturaBConsumidorFinal = String.format("%.2f", totalFacturaBConsumidorFinal)
-					.replace(".", ",");
-			String formattedTotalFacturaBMonotributistaPositivos = String
-					.format("%.2f", totalFacturaBMonotributistaPositivos).replace(".", ",");
-			String formattedTotalFacturaBMonotributistaNegativos = String
-					.format("%.2f", totalFacturaBMonotributistaNegativos).replace(".", ",");
-			String formattedTotalFacturaBMonotributista = String.format("%.2f", totalFacturaBMonotributista)
-					.replace(".", ",");
-			String formattedTotalFacturaBExentosNoAlcanzadosPositivos = String
-					.format("%.2f", totalFacturaBExentosNoAlcanzadosPositivos).replace(".", ",");
-			String formattedTotalFacturaBExentosNoAlcanzadosNegativos = String
-					.format("%.2f", totalFacturaBExentosNoAlcanzadosNegativos).replace(".", ",");
-			String formattedTotalFacturaBExentosNoAlcanzados = String.format("%.2f", totalFacturaBExentosNoAlcanzados)
-					.replace(".", ",");
-			String formattedTotalFacturaBPositivos = String.format("%.2f", totalFacturaBPositivos).replace(".", ",");
-			String formattedTotalFacturaBNegativos = String.format("%.2f", totalFacturaBNegativos).replace(".", ",");
-			String formattedTotalFacturaB = String.format("%.2f", totalFacturaB).replace(".", ",");
-
-			String formattedTotalFacturaZ_A_Positivos = String.format("%.2f", totalFacturaZ_A_Positivos).replace(".",
-					",");
-			String formattedTotalFacturaZ_A_Negativos = String.format("%.2f", totalFacturaZ_A_Negativos).replace(".",
-					",");
-			String formattedTotalFacturaZ_A = String.format("%.2f", totalFacturaZ_A).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos = String.format("%.2f", totalFacturaZ_B_Positivos).replace(".",
-					",");
-			String formattedTotalFacturaZ_B_Negativos = String.format("%.2f", totalFacturaZ_B_Negativos).replace(".",
-					",");
-			String formattedTotalFacturaZ_B = String.format("%.2f", totalFacturaZ_B).replace(".", ",");
-			String formattedTotalFacturaZPositivos = String.format("%.2f", totalFacturaZPositivos).replace(".", ",");
-			String formattedTotalFacturaZNegativos = String.format("%.2f", totalFacturaZNegativos).replace(".", ",");
-			String formattedTotalFacturaZ = String.format("%.2f", totalFacturaZ).replace(".", ",");
-
-			String formattedTotalFacturaAPositivosFacturaZ_A_Positivos = String
-					.format("%.2f", totalFacturaAPositivosFacturaZ_A_Positivos).replace(".", ",");
-			String formattedTotalFacturaANegativosFacturaZ_A_Negativos = String
-					.format("%.2f", totalFacturaANegativosFacturaZ_A_Negativos).replace(".", ",");
-			String formattedTotalFacturaAFacturaZ_A = String.format("%.2f", totalFacturaAFacturaZ_A).replace(".", ",");
-			String formattedTotalFacturaBPositivosFacturaZ_B_Positivos = String
-					.format("%.2f", totalFacturaBPositivosFacturaZ_B_Positivos).replace(".", ",");
-			String formattedTotalFacturaBNegativosFacturaZ_B_Negativos = String
-					.format("%.2f", totalFacturaBNegativosFacturaZ_B_Negativos).replace(".", ",");
-			String formattedTotalFacturaBFacturaZ_B = String.format("%.2f", totalFacturaBFacturaZ_B).replace(".", ",");
-
-			String formattedTotalFacturaZ_A_Positivos_Monotributistas = String
-					.format("%.2f", totalFacturaZ_A_Positivos_Monotributistas).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos_Monotributistas = String
-					.format("%.2f", totalFacturaZ_B_Positivos_Monotributistas).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos_ConsumidoresFinales = String
-					.format("%.2f", totalFacturaZ_B_Positivos_ConsumidoresFinales).replace(".", ",");
-			String formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzados = String
-					.format("%.2f", totalFacturaZ_A_Positivos_ExentosNoAlcanzados).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzados = String
-					.format("%.2f", totalFacturaZ_B_Positivos_ExentosNoAlcanzados).replace(".", ",");
-			String formattedTotalFacturaZ_A_Positivos_ResponsableInscripto = String
-					.format("%.2f", totalFacturaZ_A_Positivos_ResponsableInscripto).replace(".", ",");
-
-			String formattedOpRi = String
-					.format("%.2f",
-							totalFacturaAResponsableInscriptoPositivos + totalFacturaZ_A_Positivos_ResponsableInscripto)
-					.replace(".", ",");
-			String formattedOpCfMonExentos = String
-					.format("%.2f", totalFacturaZ_A_Positivos_Monotributistas
-							+ totalFacturaZ_B_Positivos_Monotributistas + totalFacturaZ_B_Positivos_ConsumidoresFinales
-							+ totalFacturaZ_A_Positivos_ExentosNoAlcanzados
-							+ totalFacturaZ_B_Positivos_ExentosNoAlcanzados + totalFacturaAMonotributistaPositivos
-							+ totalFacturaAExentosNoAlcanzadosPositivos + totalFacturaBConsumidorFinalPositivos
-							+ totalFacturaBMonotributistaPositivos + totalFacturaBExentosNoAlcanzadosPositivos)
-					.replace(".", ",");
-
-			String formattedTotalFacturaAResponsableInscriptoPositivosIva = String
-					.format("%.2f", totalFacturaAResponsableInscriptoPositivosIva).replace(".", ",");
-			String formattedTotalFacturaAResponsableInscriptoNegativosIva = String
-					.format("%.2f", totalFacturaAResponsableInscriptoNegativosIva).replace(".", ",");
-			String formattedTotalFacturaAResponsableInscriptoIva = String
-					.format("%.2f", totalFacturaAResponsableInscriptoIva).replace(".", ",");
-			String formattedTotalFacturaAMonotributistaPositivosIva = String
-					.format("%.2f", totalFacturaAMonotributistaPositivosIva).replace(".", ",");
-			String formattedTotalFacturaAMonotributistaNegativosIva = String
-					.format("%.2f", totalFacturaAMonotributistaNegativosIva).replace(".", ",");
-			String formattedTotalFacturaAMonotributistaIva = String.format("%.2f", totalFacturaAMonotributistaIva)
-					.replace(".", ",");
-			String formattedTotalFacturaAExentosNoAlcanzadosPositivosIva = String
-					.format("%.2f", totalFacturaAExentosNoAlcanzadosPositivosIva).replace(".", ",");
-			String formattedTotalFacturaAExentosNoAlcanzadosNegativosIva = String
-					.format("%.2f", totalFacturaAExentosNoAlcanzadosNegativosIva).replace(".", ",");
-			String formattedTotalFacturaAExentosNoAlcanzadosIva = String
-					.format("%.2f", totalFacturaAExentosNoAlcanzadosIva).replace(".", ",");
-			String formattedTotalFacturaAPositivosIva = String.format("%.2f", totalFacturaAPositivosIva).replace(".",
-					",");
-			String formattedTotalFacturaANegativosIva = String.format("%.2f", totalFacturaANegativosIva).replace(".",
-					",");
-			String formattedTotalFacturaAIva = String.format("%.2f", totalFacturaAIva).replace(".", ",");
-
-			String formattedTotalFacturaBConsumidorFinalPositivosIva = String
-					.format("%.2f", totalFacturaBConsumidorFinalPositivosIva).replace(".", ",");
-			String formattedTotalFacturaBConsumidorFinalNegativosIva = String
-					.format("%.2f", totalFacturaBConsumidorFinalNegativosIva).replace(".", ",");
-			String formattedTotalFacturaBConsumidorFinalIva = String.format("%.2f", totalFacturaBConsumidorFinalIva)
-					.replace(".", ",");
-			String formattedTotalFacturaBMonotributistaPositivosIva = String
-					.format("%.2f", totalFacturaBMonotributistaPositivosIva).replace(".", ",");
-			String formattedTotalFacturaBMonotributistaNegativosIva = String
-					.format("%.2f", totalFacturaBMonotributistaNegativosIva).replace(".", ",");
-			String formattedTotalFacturaBMonotributistaIva = String.format("%.2f", totalFacturaBMonotributistaIva)
-					.replace(".", ",");
-			String formattedTotalFacturaBExentosNoAlcanzadosPositivosIva = String
-					.format("%.2f", totalFacturaBExentosNoAlcanzadosPositivosIva).replace(".", ",");
-			String formattedTotalFacturaBExentosNoAlcanzadosNegativosIva = String
-					.format("%.2f", totalFacturaBExentosNoAlcanzadosNegativosIva).replace(".", ",");
-			String formattedTotalFacturaBExentosNoAlcanzadosIva = String
-					.format("%.2f", totalFacturaBExentosNoAlcanzadosIva).replace(".", ",");
-			String formattedTotalFacturaBPositivosIva = String.format("%.2f", totalFacturaBPositivosIva).replace(".",
-					",");
-			String formattedTotalFacturaBNegativosIva = String.format("%.2f", totalFacturaBNegativosIva).replace(".",
-					",");
-			String formattedTotalFacturaBIva = String.format("%.2f", totalFacturaBIva).replace(".", ",");
-
-			String formattedTotalFacturaZ_A_PositivosIva = String.format("%.2f", totalFacturaZ_A_PositivosIva)
-					.replace(".", ",");
-			String formattedTotalFacturaZ_A_NegativosIva = String.format("%.2f", totalFacturaZ_A_NegativosIva)
-					.replace(".", ",");
-			String formattedTotalFacturaZ_AIva = String.format("%.2f", totalFacturaZ_A_Iva).replace(".", ",");
-			String formattedTotalFacturaZ_B_PositivosIva = String.format("%.2f", totalFacturaZ_B_PositivosIva)
-					.replace(".", ",");
-			String formattedTotalFacturaZ_B_NegativosIva = String.format("%.2f", totalFacturaZ_B_NegativosIva)
-					.replace(".", ",");
-			String formattedTotalFacturaZ_BIva = String.format("%.2f", totalFacturaZ_B_Iva).replace(".", ",");
-			String formattedTotalFacturaZPositivosIva = String.format("%.2f", totalFacturaZPositivosIva).replace(".",
-					",");
-			String formattedTotalFacturaZNegativosIva = String.format("%.2f", totalFacturaZNegativosIva).replace(".",
-					",");
-			String formattedTotalFacturaZIva = String.format("%.2f", totalFacturaZIva).replace(".", ",");
-
-			String formattedTotalFacturaAPositivosFacturaZ_A_PositivosIva = String
-					.format("%.2f", totalFacturaAPositivosFacturaZ_A_PositivosIva).replace(".", ",");
-			String formattedTotalFacturaANegativosFacturaZ_A_NegativosIva = String
-					.format("%.2f", totalFacturaANegativosFacturaZ_A_NegativosIva).replace(".", ",");
-			String formattedTotalFacturaAFacturaZ_AIva = String.format("%.2f", totalFacturaAFacturaZ_AIva).replace(".",
-					",");
-			String formattedTotalFacturaBPositivosFacturaZ_B_PositivosIva = String
-					.format("%.2f", totalFacturaBPositivosFacturaZ_B_PositivosIva).replace(".", ",");
-			String formattedTotalFacturaBNegativosFacturaZ_B_NegativosIva = String
-					.format("%.2f", totalFacturaBNegativosFacturaZ_B_NegativosIva).replace(".", ",");
-			String formattedTotalFacturaBFacturaZ_BIva = String.format("%.2f", totalFacturaBFacturaZ_BIva).replace(".",
-					",");
-
-			String formattedTotalFacturaZ_A_Positivos_MonotributistasIva = String
-					.format("%.2f", totalFacturaZ_A_Positivos_MonotributistasIva).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos_MonotributistasIva = String
-					.format("%.2f", totalFacturaZ_B_Positivos_MonotributistasIva).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos_ConsumidoresFinalesIva = String
-					.format("%.2f", totalFacturaZ_B_Positivos_ConsumidoresFinalesIva).replace(".", ",");
-			String formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva = String
-					.format("%.2f", totalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva).replace(".", ",");
-			String formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva = String
-					.format("%.2f", totalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva).replace(".", ",");
-			String formattedTotalFacturaZ_A_Positivos_ResponsableInscriptoIva = String
-					.format("%.2f", totalFacturaZ_A_Positivos_ResponsableInscriptoIva).replace(".", ",");
-
-			String formattedOpRiIva = String.format("%.2f",
-					totalFacturaAResponsableInscriptoPositivosIva + totalFacturaZ_A_Positivos_ResponsableInscriptoIva)
-					.replace(".", ",");
-			String formattedOpCfMonExentosIva = String.format("%.2f",
-					totalFacturaZ_A_Positivos_MonotributistasIva + totalFacturaZ_B_Positivos_MonotributistasIva
-							+ totalFacturaZ_B_Positivos_ConsumidoresFinalesIva
-							+ totalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva
-							+ totalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva + totalFacturaAMonotributistaPositivosIva
-							+ totalFacturaAExentosNoAlcanzadosPositivosIva + totalFacturaBConsumidorFinalPositivosIva
-							+ totalFacturaBMonotributistaPositivosIva + totalFacturaBExentosNoAlcanzadosPositivosIva)
-					.replace(".", ",");
-
-			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA:");
-
-			System.out.println("\nFacturas A");
-
-			System.out.println("Total Factura A Responsable Inscripto (RI) Positivos: "
-					+ formattedTotalFacturaAResponsableInscriptoPositivos + " \tIVA\t "
-					+ formattedTotalFacturaAResponsableInscriptoPositivosIva);
-			System.out.println("Total Factura A Responsable Inscripto (RI) Negativos: "
-					+ formattedTotalFacturaAResponsableInscriptoNegativos + " \tIVA\t "
-					+ formattedTotalFacturaAResponsableInscriptoNegativosIva);
-			System.out
-					.println("Total Factura A Responsable Inscripto (RI): " + formattedTotalFacturaAResponsableInscripto
-							+ " \tIVA\t " + formattedTotalFacturaAResponsableInscriptoIva);
-			System.out.println(
-					"Total Factura A Monotributista Positivos: " + formattedTotalFacturaAMonotributistaPositivos
-							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaPositivosIva);
-			System.out.println(
-					"Total Factura A Monotributista Negativos: " + formattedTotalFacturaAMonotributistaNegativos
-							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaNegativosIva);
-			System.out.println("Total Factura A Monotributista: " + formattedTotalFacturaAMonotributista + " \tIVA\t "
-					+ formattedTotalFacturaAMonotributistaIva);
-			System.out.println("Total Factura A Exentos No Alcanzados Positivos: "
-					+ formattedTotalFacturaAExentosNoAlcanzadosPositivos + " \tIVA\t "
-					+ formattedTotalFacturaAExentosNoAlcanzadosPositivosIva);
-			System.out.println("Total Factura A Exentos No Alcanzados Negativos: "
-					+ formattedTotalFacturaAExentosNoAlcanzadosNegativos + " \tIVA\t "
-					+ formattedTotalFacturaAExentosNoAlcanzadosNegativosIva);
-			System.out.println("Total Factura A Exentos No Alcanzados: " + formattedTotalFacturaAExentosNoAlcanzados
-					+ " \tIVA\t " + formattedTotalFacturaAExentosNoAlcanzadosIva);
-			System.out.println("Total Factura A Positivos (sin Facturas Z positivas): "
-					+ formattedTotalFacturaAPositivos + " \tIVA\t " + formattedTotalFacturaAPositivosIva);
-			System.out.println("Total Factura A Negativos (sin Facturas Z negativas): "
-					+ formattedTotalFacturaANegativos + " \tIVA\t " + formattedTotalFacturaANegativosIva);
-			System.out.println("Total Factura A (sin Facturas Z): " + formattedTotalFacturaA + " \tIVA\t "
-					+ formattedTotalFacturaAIva);
-
-			System.out.println("\nFacturas B");
-
-			System.out.println(
-					"Total Factura B Consumidor Final Positivos: " + formattedTotalFacturaBConsumidorFinalPositivos
-							+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalPositivosIva);
-			System.out.println(
-					"Total Factura B Consumidor Final Negativos: " + formattedTotalFacturaBConsumidorFinalNegativos
-							+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalNegativosIva);
-			System.out.println("Total Factura B Consumidor Final: " + formattedTotalFacturaBConsumidorFinal
-					+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalIva);
-			System.out.println(
-					"Total Factura B Monotributista Positivos: " + formattedTotalFacturaBMonotributistaPositivos
-							+ " \tIVA\t " + formattedTotalFacturaBMonotributistaPositivosIva);
-			System.out.println(
-					"Total Factura B Monotributista Negativos: " + formattedTotalFacturaBMonotributistaNegativos
-							+ " \tIVA\t " + formattedTotalFacturaBMonotributistaNegativosIva);
-			System.out.println("Total Factura B Monotributista: " + formattedTotalFacturaBMonotributista + " \tIVA\t "
-					+ formattedTotalFacturaBMonotributistaIva);
-			System.out.println("Total Factura B Exentos No Alcanzados Positivos: "
-					+ formattedTotalFacturaBExentosNoAlcanzadosPositivos + " \tIVA\t "
-					+ formattedTotalFacturaBExentosNoAlcanzadosPositivosIva);
-			System.out.println("Total Factura B Exentos No Alcanzados Negativos: "
-					+ formattedTotalFacturaBExentosNoAlcanzadosNegativos + " \tIVA\t "
-					+ formattedTotalFacturaBExentosNoAlcanzadosNegativosIva);
-			System.out.println("Total Factura B Exentos No Alcanzados: " + formattedTotalFacturaBExentosNoAlcanzados
-					+ " \tIVA\t " + formattedTotalFacturaBExentosNoAlcanzadosIva);
-			System.out.println("Total Factura B Positivos (sin Facturas Z positivas): "
-					+ formattedTotalFacturaBPositivos + " \tIVA\t " + formattedTotalFacturaBPositivosIva);
-			System.out.println("Total Factura B Negativos (sin Facturas Z negativas): "
-					+ formattedTotalFacturaBNegativos + " \tIVA\t " + formattedTotalFacturaBNegativosIva);
-			System.out.println("Total Factura B (sin facturas Z): " + formattedTotalFacturaB + " \tIVA\t "
-					+ formattedTotalFacturaBIva);
-
-			System.out.println("\nFacturas Z");
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos: " + formattedTotalFacturaZ_A_Positivos
-					+ " \tIVA\t " + formattedTotalFacturaZ_A_PositivosIva);
-			System.out.println("Total Factura Z Que Son Factura A Negativos: " + formattedTotalFacturaZ_A_Negativos
-					+ " \tIVA\t " + formattedTotalFacturaZ_A_NegativosIva);
-			System.out.println("Total Factura Z Que Son Factura A: " + formattedTotalFacturaZ_A + " \tIVA\t "
-					+ formattedTotalFacturaZ_AIva);
-			System.out.println("Total Factura Z Que Son Factura B Positivos: " + formattedTotalFacturaZ_B_Positivos
-					+ " \tIVA\t " + formattedTotalFacturaZ_B_PositivosIva);
-			System.out.println("Total Factura Z Que Son Factura B Negativos: " + formattedTotalFacturaZ_B_Negativos
-					+ " \tIVA\t " + formattedTotalFacturaZ_B_NegativosIva);
-			System.out.println("Total Factura Z Que Son Factura B: " + formattedTotalFacturaZ_B + " \tIVA\t "
-					+ formattedTotalFacturaZ_BIva);
-			System.out.println("Total Factura Z Positivos: " + formattedTotalFacturaZPositivos + " \tIVA\t "
-					+ formattedTotalFacturaZPositivosIva);
-			System.out.println("Total Factura Z Negativos: " + formattedTotalFacturaZNegativos + " \tIVA\t "
-					+ formattedTotalFacturaZNegativosIva);
-			System.out.println("Total Factura Z: " + formattedTotalFacturaZ + " \tIVA\t " + formattedTotalFacturaZIva);
-
-			System.out.println("Total Factura A Positivos (con Facturas Z que son A Positivos): "
-					+ formattedTotalFacturaAPositivosFacturaZ_A_Positivos + " \tIVA\t "
-					+ formattedTotalFacturaAPositivosFacturaZ_A_PositivosIva);
-			System.out.println("Total Factura A Negativos (con Facturas Z que son A Negativos): "
-					+ formattedTotalFacturaANegativosFacturaZ_A_Negativos + " \tIVA\t "
-					+ formattedTotalFacturaANegativosFacturaZ_A_NegativosIva);
-			System.out.println("Total Factura A (con Facturas Z que son A): " + formattedTotalFacturaAFacturaZ_A
-					+ " \tIVA\t " + formattedTotalFacturaAFacturaZ_AIva);
-
-			System.out.println("Total Factura B Positivos (con Facturas Z que son B Positivos): "
-					+ formattedTotalFacturaBPositivosFacturaZ_B_Positivos + " \tIVA\t "
-					+ formattedTotalFacturaBPositivosFacturaZ_B_PositivosIva);
-			System.out.println("Total Factura B Negativos (con Facturas Z que son B Negativos): "
-					+ formattedTotalFacturaBNegativosFacturaZ_B_Negativos + " \tIVA\t "
-					+ formattedTotalFacturaBNegativosFacturaZ_B_NegativosIva);
-			System.out.println("Total Factura B (con Facturas Z que son B): " + formattedTotalFacturaBFacturaZ_B
-					+ " \tIVA\t " + formattedTotalFacturaBFacturaZ_BIva);
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos Responsable Inscripto : "
-					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscripto + " \tIVA\t "
-					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscriptoIva);
-			System.out.println(
-					"Operaciones con responsables Inscriptos): " + formattedOpRi + " \tIVA\t " + formattedOpRiIva);
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos Monotributistas: "
-					+ formattedTotalFacturaZ_A_Positivos_Monotributistas + " \tIVA\t "
-					+ formattedTotalFacturaZ_A_Positivos_MonotributistasIva);
-			System.out.println("Total Factura Z Que Son Factura B Positivos Monotributistas: "
-					+ formattedTotalFacturaZ_B_Positivos_Monotributistas + " \tIVA\t "
-					+ formattedTotalFacturaZ_B_Positivos_MonotributistasIva);
-
-			System.out.println("Total Factura Z Que son Factura B Positivos Consumidores Finales: "
-					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinales + " \tIVA\t "
-					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinalesIva);
-
-			System.out.println("Total Factura Z Que Son Factura A Positivos Exentos No Alcanzados: "
-					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzados + " \tIVA\t "
-					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva);
-
-			System.out.println("Total Factura Z Que son Factura B Positivos Exentos No Alcanzados: "
-					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzados + " \tIVA\t "
-					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva);
-
-			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentos
-					+ " \tIVA\t " + formattedOpCfMonExentosIva);
-
 			String formattedTotalFacturaAResponsableInscriptoPositivos21 = String
 					.format("%.2f", totalFacturaAResponsableInscriptoPositivos21).replace(".", ",");
 			String formattedTotalFacturaAResponsableInscriptoNegativos21 = String
@@ -2592,6 +2258,346 @@ public class Main {
 
 			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS 27: " + formattedOpCfMonExentos27
 					+ " \tIVA\t " + formattedOpCfMonExentosIva27);
+
+			// Formatear los resultados
+
+			String formattedTotalFacturaAResponsableInscriptoPositivos = String
+					.format("%.2f", totalFacturaAResponsableInscriptoPositivos).replace(".", ",");
+			String formattedTotalFacturaAResponsableInscriptoNegativos = String
+					.format("%.2f", totalFacturaAResponsableInscriptoNegativos).replace(".", ",");
+			String formattedTotalFacturaAResponsableInscripto = String.format("%.2f", totalFacturaAResponsableInscripto)
+					.replace(".", ",");
+			String formattedTotalFacturaAMonotributistaPositivos = String
+					.format("%.2f", totalFacturaAMonotributistaPositivos).replace(".", ",");
+			String formattedTotalFacturaAMonotributistaNegativos = String
+					.format("%.2f", totalFacturaAMonotributistaNegativos).replace(".", ",");
+			String formattedTotalFacturaAMonotributista = String.format("%.2f", totalFacturaAMonotributista)
+					.replace(".", ",");
+			String formattedTotalFacturaAExentosNoAlcanzadosPositivos = String
+					.format("%.2f", totalFacturaAExentosNoAlcanzadosPositivos).replace(".", ",");
+			String formattedTotalFacturaAExentosNoAlcanzadosNegativos = String
+					.format("%.2f", totalFacturaAExentosNoAlcanzadosNegativos).replace(".", ",");
+			String formattedTotalFacturaAExentosNoAlcanzados = String.format("%.2f", totalFacturaAExentosNoAlcanzados)
+					.replace(".", ",");
+			String formattedTotalFacturaAPositivos = String.format("%.2f", totalFacturaAPositivos).replace(".", ",");
+			String formattedTotalFacturaANegativos = String.format("%.2f", totalFacturaANegativos).replace(".", ",");
+			String formattedTotalFacturaA = String.format("%.2f", totalFacturaA).replace(".", ",");
+
+			String formattedTotalFacturaBConsumidorFinalPositivos = String
+					.format("%.2f", totalFacturaBConsumidorFinalPositivos).replace(".", ",");
+			String formattedTotalFacturaBConsumidorFinalNegativos = String
+					.format("%.2f", totalFacturaBConsumidorFinalNegativos).replace(".", ",");
+			String formattedTotalFacturaBConsumidorFinal = String.format("%.2f", totalFacturaBConsumidorFinal)
+					.replace(".", ",");
+			String formattedTotalFacturaBMonotributistaPositivos = String
+					.format("%.2f", totalFacturaBMonotributistaPositivos).replace(".", ",");
+			String formattedTotalFacturaBMonotributistaNegativos = String
+					.format("%.2f", totalFacturaBMonotributistaNegativos).replace(".", ",");
+			String formattedTotalFacturaBMonotributista = String.format("%.2f", totalFacturaBMonotributista)
+					.replace(".", ",");
+			String formattedTotalFacturaBExentosNoAlcanzadosPositivos = String
+					.format("%.2f", totalFacturaBExentosNoAlcanzadosPositivos).replace(".", ",");
+			String formattedTotalFacturaBExentosNoAlcanzadosNegativos = String
+					.format("%.2f", totalFacturaBExentosNoAlcanzadosNegativos).replace(".", ",");
+			String formattedTotalFacturaBExentosNoAlcanzados = String.format("%.2f", totalFacturaBExentosNoAlcanzados)
+					.replace(".", ",");
+			String formattedTotalFacturaBPositivos = String.format("%.2f", totalFacturaBPositivos).replace(".", ",");
+			String formattedTotalFacturaBNegativos = String.format("%.2f", totalFacturaBNegativos).replace(".", ",");
+			String formattedTotalFacturaB = String.format("%.2f", totalFacturaB).replace(".", ",");
+
+			String formattedTotalFacturaZ_A_Positivos = String.format("%.2f", totalFacturaZ_A_Positivos).replace(".",
+					",");
+			String formattedTotalFacturaZ_A_Negativos = String.format("%.2f", totalFacturaZ_A_Negativos).replace(".",
+					",");
+			String formattedTotalFacturaZ_A = String.format("%.2f", totalFacturaZ_A).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos = String.format("%.2f", totalFacturaZ_B_Positivos).replace(".",
+					",");
+			String formattedTotalFacturaZ_B_Negativos = String.format("%.2f", totalFacturaZ_B_Negativos).replace(".",
+					",");
+			String formattedTotalFacturaZ_B = String.format("%.2f", totalFacturaZ_B).replace(".", ",");
+			String formattedTotalFacturaZPositivos = String.format("%.2f", totalFacturaZPositivos).replace(".", ",");
+			String formattedTotalFacturaZNegativos = String.format("%.2f", totalFacturaZNegativos).replace(".", ",");
+			String formattedTotalFacturaZ = String.format("%.2f", totalFacturaZ).replace(".", ",");
+
+			String formattedTotalFacturaAPositivosFacturaZ_A_Positivos = String
+					.format("%.2f", totalFacturaAPositivosFacturaZ_A_Positivos).replace(".", ",");
+			String formattedTotalFacturaANegativosFacturaZ_A_Negativos = String
+					.format("%.2f", totalFacturaANegativosFacturaZ_A_Negativos).replace(".", ",");
+			String formattedTotalFacturaAFacturaZ_A = String.format("%.2f", totalFacturaAFacturaZ_A).replace(".", ",");
+			String formattedTotalFacturaBPositivosFacturaZ_B_Positivos = String
+					.format("%.2f", totalFacturaBPositivosFacturaZ_B_Positivos).replace(".", ",");
+			String formattedTotalFacturaBNegativosFacturaZ_B_Negativos = String
+					.format("%.2f", totalFacturaBNegativosFacturaZ_B_Negativos).replace(".", ",");
+			String formattedTotalFacturaBFacturaZ_B = String.format("%.2f", totalFacturaBFacturaZ_B).replace(".", ",");
+
+			String formattedTotalFacturaZ_A_Positivos_Monotributistas = String
+					.format("%.2f", totalFacturaZ_A_Positivos_Monotributistas).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos_Monotributistas = String
+					.format("%.2f", totalFacturaZ_B_Positivos_Monotributistas).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos_ConsumidoresFinales = String
+					.format("%.2f", totalFacturaZ_B_Positivos_ConsumidoresFinales).replace(".", ",");
+			String formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzados = String
+					.format("%.2f", totalFacturaZ_A_Positivos_ExentosNoAlcanzados).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzados = String
+					.format("%.2f", totalFacturaZ_B_Positivos_ExentosNoAlcanzados).replace(".", ",");
+			String formattedTotalFacturaZ_A_Positivos_ResponsableInscripto = String
+					.format("%.2f", totalFacturaZ_A_Positivos_ResponsableInscripto).replace(".", ",");
+
+			String formattedOpRi = String
+					.format("%.2f",
+							totalFacturaAResponsableInscriptoPositivos + totalFacturaZ_A_Positivos_ResponsableInscripto)
+					.replace(".", ",");
+			String formattedOpCfMonExentos = String
+					.format("%.2f", totalFacturaZ_A_Positivos_Monotributistas
+							+ totalFacturaZ_B_Positivos_Monotributistas + totalFacturaZ_B_Positivos_ConsumidoresFinales
+							+ totalFacturaZ_A_Positivos_ExentosNoAlcanzados
+							+ totalFacturaZ_B_Positivos_ExentosNoAlcanzados + totalFacturaAMonotributistaPositivos
+							+ totalFacturaAExentosNoAlcanzadosPositivos + totalFacturaBConsumidorFinalPositivos
+							+ totalFacturaBMonotributistaPositivos + totalFacturaBExentosNoAlcanzadosPositivos)
+					.replace(".", ",");
+
+			String formattedTotalFacturaAResponsableInscriptoPositivosIva = String
+					.format("%.2f", totalFacturaAResponsableInscriptoPositivosIva).replace(".", ",");
+			String formattedTotalFacturaAResponsableInscriptoNegativosIva = String
+					.format("%.2f", totalFacturaAResponsableInscriptoNegativosIva).replace(".", ",");
+			String formattedTotalFacturaAResponsableInscriptoIva = String
+					.format("%.2f", totalFacturaAResponsableInscriptoIva).replace(".", ",");
+			String formattedTotalFacturaAMonotributistaPositivosIva = String
+					.format("%.2f", totalFacturaAMonotributistaPositivosIva).replace(".", ",");
+			String formattedTotalFacturaAMonotributistaNegativosIva = String
+					.format("%.2f", totalFacturaAMonotributistaNegativosIva).replace(".", ",");
+			String formattedTotalFacturaAMonotributistaIva = String.format("%.2f", totalFacturaAMonotributistaIva)
+					.replace(".", ",");
+			String formattedTotalFacturaAExentosNoAlcanzadosPositivosIva = String
+					.format("%.2f", totalFacturaAExentosNoAlcanzadosPositivosIva).replace(".", ",");
+			String formattedTotalFacturaAExentosNoAlcanzadosNegativosIva = String
+					.format("%.2f", totalFacturaAExentosNoAlcanzadosNegativosIva).replace(".", ",");
+			String formattedTotalFacturaAExentosNoAlcanzadosIva = String
+					.format("%.2f", totalFacturaAExentosNoAlcanzadosIva).replace(".", ",");
+			String formattedTotalFacturaAPositivosIva = String.format("%.2f", totalFacturaAPositivosIva).replace(".",
+					",");
+			String formattedTotalFacturaANegativosIva = String.format("%.2f", totalFacturaANegativosIva).replace(".",
+					",");
+			String formattedTotalFacturaAIva = String.format("%.2f", totalFacturaAIva).replace(".", ",");
+
+			String formattedTotalFacturaBConsumidorFinalPositivosIva = String
+					.format("%.2f", totalFacturaBConsumidorFinalPositivosIva).replace(".", ",");
+			String formattedTotalFacturaBConsumidorFinalNegativosIva = String
+					.format("%.2f", totalFacturaBConsumidorFinalNegativosIva).replace(".", ",");
+			String formattedTotalFacturaBConsumidorFinalIva = String.format("%.2f", totalFacturaBConsumidorFinalIva)
+					.replace(".", ",");
+			String formattedTotalFacturaBMonotributistaPositivosIva = String
+					.format("%.2f", totalFacturaBMonotributistaPositivosIva).replace(".", ",");
+			String formattedTotalFacturaBMonotributistaNegativosIva = String
+					.format("%.2f", totalFacturaBMonotributistaNegativosIva).replace(".", ",");
+			String formattedTotalFacturaBMonotributistaIva = String.format("%.2f", totalFacturaBMonotributistaIva)
+					.replace(".", ",");
+			String formattedTotalFacturaBExentosNoAlcanzadosPositivosIva = String
+					.format("%.2f", totalFacturaBExentosNoAlcanzadosPositivosIva).replace(".", ",");
+			String formattedTotalFacturaBExentosNoAlcanzadosNegativosIva = String
+					.format("%.2f", totalFacturaBExentosNoAlcanzadosNegativosIva).replace(".", ",");
+			String formattedTotalFacturaBExentosNoAlcanzadosIva = String
+					.format("%.2f", totalFacturaBExentosNoAlcanzadosIva).replace(".", ",");
+			String formattedTotalFacturaBPositivosIva = String.format("%.2f", totalFacturaBPositivosIva).replace(".",
+					",");
+			String formattedTotalFacturaBNegativosIva = String.format("%.2f", totalFacturaBNegativosIva).replace(".",
+					",");
+			String formattedTotalFacturaBIva = String.format("%.2f", totalFacturaBIva).replace(".", ",");
+
+			String formattedTotalFacturaZ_A_PositivosIva = String.format("%.2f", totalFacturaZ_A_PositivosIva)
+					.replace(".", ",");
+			String formattedTotalFacturaZ_A_NegativosIva = String.format("%.2f", totalFacturaZ_A_NegativosIva)
+					.replace(".", ",");
+			String formattedTotalFacturaZ_AIva = String.format("%.2f", totalFacturaZ_A_Iva).replace(".", ",");
+			String formattedTotalFacturaZ_B_PositivosIva = String.format("%.2f", totalFacturaZ_B_PositivosIva)
+					.replace(".", ",");
+			String formattedTotalFacturaZ_B_NegativosIva = String.format("%.2f", totalFacturaZ_B_NegativosIva)
+					.replace(".", ",");
+			String formattedTotalFacturaZ_BIva = String.format("%.2f", totalFacturaZ_B_Iva).replace(".", ",");
+			String formattedTotalFacturaZPositivosIva = String.format("%.2f", totalFacturaZPositivosIva).replace(".",
+					",");
+			String formattedTotalFacturaZNegativosIva = String.format("%.2f", totalFacturaZNegativosIva).replace(".",
+					",");
+			String formattedTotalFacturaZIva = String.format("%.2f", totalFacturaZIva).replace(".", ",");
+
+			String formattedTotalFacturaAPositivosFacturaZ_A_PositivosIva = String
+					.format("%.2f", totalFacturaAPositivosFacturaZ_A_PositivosIva).replace(".", ",");
+			String formattedTotalFacturaANegativosFacturaZ_A_NegativosIva = String
+					.format("%.2f", totalFacturaANegativosFacturaZ_A_NegativosIva).replace(".", ",");
+			String formattedTotalFacturaAFacturaZ_AIva = String.format("%.2f", totalFacturaAFacturaZ_AIva).replace(".",
+					",");
+			String formattedTotalFacturaBPositivosFacturaZ_B_PositivosIva = String
+					.format("%.2f", totalFacturaBPositivosFacturaZ_B_PositivosIva).replace(".", ",");
+			String formattedTotalFacturaBNegativosFacturaZ_B_NegativosIva = String
+					.format("%.2f", totalFacturaBNegativosFacturaZ_B_NegativosIva).replace(".", ",");
+			String formattedTotalFacturaBFacturaZ_BIva = String.format("%.2f", totalFacturaBFacturaZ_BIva).replace(".",
+					",");
+
+			String formattedTotalFacturaZ_A_Positivos_MonotributistasIva = String
+					.format("%.2f", totalFacturaZ_A_Positivos_MonotributistasIva).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos_MonotributistasIva = String
+					.format("%.2f", totalFacturaZ_B_Positivos_MonotributistasIva).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos_ConsumidoresFinalesIva = String
+					.format("%.2f", totalFacturaZ_B_Positivos_ConsumidoresFinalesIva).replace(".", ",");
+			String formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva = String
+					.format("%.2f", totalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva).replace(".", ",");
+			String formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva = String
+					.format("%.2f", totalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva).replace(".", ",");
+			String formattedTotalFacturaZ_A_Positivos_ResponsableInscriptoIva = String
+					.format("%.2f", totalFacturaZ_A_Positivos_ResponsableInscriptoIva).replace(".", ",");
+
+			String formattedOpRiIva = String.format("%.2f",
+					totalFacturaAResponsableInscriptoPositivosIva + totalFacturaZ_A_Positivos_ResponsableInscriptoIva)
+					.replace(".", ",");
+			String formattedOpCfMonExentosIva = String.format("%.2f",
+					totalFacturaZ_A_Positivos_MonotributistasIva + totalFacturaZ_B_Positivos_MonotributistasIva
+							+ totalFacturaZ_B_Positivos_ConsumidoresFinalesIva
+							+ totalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva
+							+ totalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva + totalFacturaAMonotributistaPositivosIva
+							+ totalFacturaAExentosNoAlcanzadosPositivosIva + totalFacturaBConsumidorFinalPositivosIva
+							+ totalFacturaBMonotributistaPositivosIva + totalFacturaBExentosNoAlcanzadosPositivosIva)
+					.replace(".", ",");
+
+			// Mostrar los resultados formateados
+			System.out.println("\nTotales acumulados Neto Gravado con IVA:");
+
+			System.out.println("\nFacturas A");
+
+			System.out.println("Total Factura A Responsable Inscripto (RI) Positivos: "
+					+ formattedTotalFacturaAResponsableInscriptoPositivos + " \tIVA\t "
+					+ formattedTotalFacturaAResponsableInscriptoPositivosIva);
+			System.out.println("Total Factura A Responsable Inscripto (RI) Negativos: "
+					+ formattedTotalFacturaAResponsableInscriptoNegativos + " \tIVA\t "
+					+ formattedTotalFacturaAResponsableInscriptoNegativosIva);
+			System.out
+					.println("Total Factura A Responsable Inscripto (RI): " + formattedTotalFacturaAResponsableInscripto
+							+ " \tIVA\t " + formattedTotalFacturaAResponsableInscriptoIva);
+			System.out.println(
+					"Total Factura A Monotributista Positivos: " + formattedTotalFacturaAMonotributistaPositivos
+							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaPositivosIva);
+			System.out.println(
+					"Total Factura A Monotributista Negativos: " + formattedTotalFacturaAMonotributistaNegativos
+							+ " \tIVA\t " + formattedTotalFacturaAMonotributistaNegativosIva);
+			System.out.println("Total Factura A Monotributista: " + formattedTotalFacturaAMonotributista + " \tIVA\t "
+					+ formattedTotalFacturaAMonotributistaIva);
+			System.out.println("Total Factura A Exentos No Alcanzados Positivos: "
+					+ formattedTotalFacturaAExentosNoAlcanzadosPositivos + " \tIVA\t "
+					+ formattedTotalFacturaAExentosNoAlcanzadosPositivosIva);
+			System.out.println("Total Factura A Exentos No Alcanzados Negativos: "
+					+ formattedTotalFacturaAExentosNoAlcanzadosNegativos + " \tIVA\t "
+					+ formattedTotalFacturaAExentosNoAlcanzadosNegativosIva);
+			System.out.println("Total Factura A Exentos No Alcanzados: " + formattedTotalFacturaAExentosNoAlcanzados
+					+ " \tIVA\t " + formattedTotalFacturaAExentosNoAlcanzadosIva);
+			System.out.println("Total Factura A Positivos (sin Facturas Z positivas): "
+					+ formattedTotalFacturaAPositivos + " \tIVA\t " + formattedTotalFacturaAPositivosIva);
+			System.out.println("Total Factura A Negativos (sin Facturas Z negativas): "
+					+ formattedTotalFacturaANegativos + " \tIVA\t " + formattedTotalFacturaANegativosIva);
+			System.out.println("Total Factura A (sin Facturas Z): " + formattedTotalFacturaA + " \tIVA\t "
+					+ formattedTotalFacturaAIva);
+
+			System.out.println("\nFacturas B");
+
+			System.out.println(
+					"Total Factura B Consumidor Final Positivos: " + formattedTotalFacturaBConsumidorFinalPositivos
+							+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalPositivosIva);
+			System.out.println(
+					"Total Factura B Consumidor Final Negativos: " + formattedTotalFacturaBConsumidorFinalNegativos
+							+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalNegativosIva);
+			System.out.println("Total Factura B Consumidor Final: " + formattedTotalFacturaBConsumidorFinal
+					+ " \tIVA\t " + formattedTotalFacturaBConsumidorFinalIva);
+			System.out.println(
+					"Total Factura B Monotributista Positivos: " + formattedTotalFacturaBMonotributistaPositivos
+							+ " \tIVA\t " + formattedTotalFacturaBMonotributistaPositivosIva);
+			System.out.println(
+					"Total Factura B Monotributista Negativos: " + formattedTotalFacturaBMonotributistaNegativos
+							+ " \tIVA\t " + formattedTotalFacturaBMonotributistaNegativosIva);
+			System.out.println("Total Factura B Monotributista: " + formattedTotalFacturaBMonotributista + " \tIVA\t "
+					+ formattedTotalFacturaBMonotributistaIva);
+			System.out.println("Total Factura B Exentos No Alcanzados Positivos: "
+					+ formattedTotalFacturaBExentosNoAlcanzadosPositivos + " \tIVA\t "
+					+ formattedTotalFacturaBExentosNoAlcanzadosPositivosIva);
+			System.out.println("Total Factura B Exentos No Alcanzados Negativos: "
+					+ formattedTotalFacturaBExentosNoAlcanzadosNegativos + " \tIVA\t "
+					+ formattedTotalFacturaBExentosNoAlcanzadosNegativosIva);
+			System.out.println("Total Factura B Exentos No Alcanzados: " + formattedTotalFacturaBExentosNoAlcanzados
+					+ " \tIVA\t " + formattedTotalFacturaBExentosNoAlcanzadosIva);
+			System.out.println("Total Factura B Positivos (sin Facturas Z positivas): "
+					+ formattedTotalFacturaBPositivos + " \tIVA\t " + formattedTotalFacturaBPositivosIva);
+			System.out.println("Total Factura B Negativos (sin Facturas Z negativas): "
+					+ formattedTotalFacturaBNegativos + " \tIVA\t " + formattedTotalFacturaBNegativosIva);
+			System.out.println("Total Factura B (sin facturas Z): " + formattedTotalFacturaB + " \tIVA\t "
+					+ formattedTotalFacturaBIva);
+
+			System.out.println("\nFacturas Z");
+
+			System.out.println("Total Factura Z Que Son Factura A Positivos: " + formattedTotalFacturaZ_A_Positivos
+					+ " \tIVA\t " + formattedTotalFacturaZ_A_PositivosIva);
+			System.out.println("Total Factura Z Que Son Factura A Negativos: " + formattedTotalFacturaZ_A_Negativos
+					+ " \tIVA\t " + formattedTotalFacturaZ_A_NegativosIva);
+			System.out.println("Total Factura Z Que Son Factura A: " + formattedTotalFacturaZ_A + " \tIVA\t "
+					+ formattedTotalFacturaZ_AIva);
+			System.out.println("Total Factura Z Que Son Factura B Positivos: " + formattedTotalFacturaZ_B_Positivos
+					+ " \tIVA\t " + formattedTotalFacturaZ_B_PositivosIva);
+			System.out.println("Total Factura Z Que Son Factura B Negativos: " + formattedTotalFacturaZ_B_Negativos
+					+ " \tIVA\t " + formattedTotalFacturaZ_B_NegativosIva);
+			System.out.println("Total Factura Z Que Son Factura B: " + formattedTotalFacturaZ_B + " \tIVA\t "
+					+ formattedTotalFacturaZ_BIva);
+			System.out.println("Total Factura Z Positivos: " + formattedTotalFacturaZPositivos + " \tIVA\t "
+					+ formattedTotalFacturaZPositivosIva);
+			System.out.println("Total Factura Z Negativos: " + formattedTotalFacturaZNegativos + " \tIVA\t "
+					+ formattedTotalFacturaZNegativosIva);
+			System.out.println("Total Factura Z: " + formattedTotalFacturaZ + " \tIVA\t " + formattedTotalFacturaZIva);
+
+			System.out.println("Total Factura A Positivos (con Facturas Z que son A Positivos): "
+					+ formattedTotalFacturaAPositivosFacturaZ_A_Positivos + " \tIVA\t "
+					+ formattedTotalFacturaAPositivosFacturaZ_A_PositivosIva);
+			System.out.println("Total Factura A Negativos (con Facturas Z que son A Negativos): "
+					+ formattedTotalFacturaANegativosFacturaZ_A_Negativos + " \tIVA\t "
+					+ formattedTotalFacturaANegativosFacturaZ_A_NegativosIva);
+			System.out.println("Total Factura A (con Facturas Z que son A): " + formattedTotalFacturaAFacturaZ_A
+					+ " \tIVA\t " + formattedTotalFacturaAFacturaZ_AIva);
+
+			System.out.println("Total Factura B Positivos (con Facturas Z que son B Positivos): "
+					+ formattedTotalFacturaBPositivosFacturaZ_B_Positivos + " \tIVA\t "
+					+ formattedTotalFacturaBPositivosFacturaZ_B_PositivosIva);
+			System.out.println("Total Factura B Negativos (con Facturas Z que son B Negativos): "
+					+ formattedTotalFacturaBNegativosFacturaZ_B_Negativos + " \tIVA\t "
+					+ formattedTotalFacturaBNegativosFacturaZ_B_NegativosIva);
+			System.out.println("Total Factura B (con Facturas Z que son B): " + formattedTotalFacturaBFacturaZ_B
+					+ " \tIVA\t " + formattedTotalFacturaBFacturaZ_BIva);
+
+			System.out.println("Total Factura Z Que Son Factura A Positivos Responsable Inscripto : "
+					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscripto + " \tIVA\t "
+					+ formattedTotalFacturaZ_A_Positivos_ResponsableInscriptoIva);
+			System.out.println(
+					"Operaciones con responsables Inscriptos): " + formattedOpRi + " \tIVA\t " + formattedOpRiIva);
+
+			System.out.println("Total Factura Z Que Son Factura A Positivos Monotributistas: "
+					+ formattedTotalFacturaZ_A_Positivos_Monotributistas + " \tIVA\t "
+					+ formattedTotalFacturaZ_A_Positivos_MonotributistasIva);
+			System.out.println("Total Factura Z Que Son Factura B Positivos Monotributistas: "
+					+ formattedTotalFacturaZ_B_Positivos_Monotributistas + " \tIVA\t "
+					+ formattedTotalFacturaZ_B_Positivos_MonotributistasIva);
+
+			System.out.println("Total Factura Z Que son Factura B Positivos Consumidores Finales: "
+					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinales + " \tIVA\t "
+					+ formattedTotalFacturaZ_B_Positivos_ConsumidoresFinalesIva);
+
+			System.out.println("Total Factura Z Que Son Factura A Positivos Exentos No Alcanzados: "
+					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzados + " \tIVA\t "
+					+ formattedTotalFacturaZ_A_Positivos_ExentosNoAlcanzadosIva);
+
+			System.out.println("Total Factura Z Que son Factura B Positivos Exentos No Alcanzados: "
+					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzados + " \tIVA\t "
+					+ formattedTotalFacturaZ_B_Positivos_ExentosNoAlcanzadosIva);
+
+			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentos
+					+ " \tIVA\t " + formattedOpCfMonExentosIva);
+
+			System.out.println("Factura Procesada");
+			Scanner lector = new Scanner(System.in);
+			String nombre = lector.nextLine();
+			lector.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
