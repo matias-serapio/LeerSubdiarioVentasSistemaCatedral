@@ -410,6 +410,7 @@ public class Main {
 				Cell totalIvaCell = row.getCell(29);
 				Cell codigoIvaCell = row.getCell(11);
 				Cell exentoCell = row.getCell(22);
+				Cell nroComprobanteCell = row.getCell(5);
 				boolean requiereRevision = false;
 
 				if (totalNetoGravadoCell != null) {
@@ -421,8 +422,18 @@ public class Main {
 					double totalIva21;
 					double totalIva10_5;
 					double totalIva27;
+					double nroComprobante;
 
 					try {
+						if (nroComprobanteCell.getCellType() == CellType.NUMERIC) {
+							nroComprobante = nroComprobanteCell.getNumericCellValue();
+						} else if (nroComprobanteCell.getCellType() == CellType.STRING) {
+							nroComprobante = Double
+									.parseDouble(nroComprobanteCell.getStringCellValue().replace(",", ""));
+						} else {
+							System.out.println("La celda no contiene un valor numérico: " + totalNetoGravadoCell);
+							continue;
+						}
 						if (totalNetoGravadoCell.getCellType() == CellType.NUMERIC) {
 							totalNetoGravado = totalNetoGravadoCell.getNumericCellValue();
 						} else if (totalNetoGravadoCell.getCellType() == CellType.STRING) {
@@ -499,6 +510,7 @@ public class Main {
 
 					String formattedTotalNetoGravado = String.format("%.2f", totalNetoGravado);
 					String formattedTotalIva = String.format("%.2f", totalIva);
+					String formattednroComprobante = String.format("%.0f", nroComprobante);
 					if (letraCell != null && letraCell.getCellType() == CellType.STRING) {
 						String letra = letraCell.getStringCellValue();
 						String numeroCliente = numeroClienteCell != null
@@ -520,11 +532,13 @@ public class Main {
 								: "";
 
 						if (totalNetoGravado < 0) {
-							System.out.println("Nota de Crédito: " + formattedTotalNetoGravado.replace(".", ",")
-									+ " - IVA: " + formattedTotalIva.replace(".", ","));
+							System.out.println("N° Comprobante: " + formattednroComprobante.replace(".", ",")
+									+ " Nota de Crédito: " + formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
+									+ formattedTotalIva.replace(".", ","));
 						} else {
-							System.out.println("Factura Positiva: " + formattedTotalNetoGravado.replace(".", ",")
-									+ " - IVA: " + formattedTotalIva.replace(".", ","));
+							System.out.println("N° Comprobante: " + formattednroComprobante.replace(".", ",")
+									+ " Factura Positiva: " + formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
+									+ formattedTotalIva.replace(".", ","));
 						}
 
 						if (letra.equalsIgnoreCase("A")) {
@@ -914,8 +928,7 @@ public class Main {
 							totalFacturaBFacturaZ_BIva27 += totalIva27;
 
 						} else if (letra.equalsIgnoreCase("Z")) {
-							System.out.println("Factura " + letra + ": " + formattedTotalNetoGravado.replace(".", ",")
-									+ " - IVA: " + formattedTotalIva.replace(".", ","));
+
 							totalFacturaZ += totalNetoGravado;
 							totalFacturaZIva += totalIva;
 							totalFacturaZ21 += totalNetoGravado21;
