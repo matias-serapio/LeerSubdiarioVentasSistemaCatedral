@@ -2369,6 +2369,9 @@ public class Main {
 							+ totalFacturaBMonotributistaPositivos + totalFacturaBExentosNoAlcanzadosPositivos)
 					.replace(".", ",");
 
+			String formattedtotalFacturaZAB_AB = String
+					.format("%.2f", totalFacturaAFacturaZ_A + totalFacturaBFacturaZ_B).replace(".", ",");
+
 			String formattedTotalFacturaAResponsableInscriptoPositivosIva = String
 					.format("%.2f", totalFacturaAResponsableInscriptoPositivosIva).replace(".", ",");
 			String formattedTotalFacturaAResponsableInscriptoNegativosIva = String
@@ -2470,6 +2473,9 @@ public class Main {
 							+ totalFacturaAExentosNoAlcanzadosPositivosIva + totalFacturaBConsumidorFinalPositivosIva
 							+ totalFacturaBMonotributistaPositivosIva + totalFacturaBExentosNoAlcanzadosPositivosIva)
 					.replace(".", ",");
+
+			String formattedtotalFacturaZAB_ABIva = String
+					.format("%.2f", totalFacturaAFacturaZ_AIva + totalFacturaBFacturaZ_BIva).replace(".", ",");
 
 			// Mostrar los resultados formateados
 			System.out.println("\nTotales acumulados Neto Gravado con IVA:");
@@ -2606,6 +2612,9 @@ public class Main {
 
 			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentos
 					+ " \tIVA\t " + formattedOpCfMonExentosIva);
+
+			System.out.println("Total Facturas A, B y Z (que son A y B): " + formattedtotalFacturaZAB_AB + " \tIVA\t "
+					+ formattedtotalFacturaZAB_ABIva);
 
 			System.out.println("Factura Procesada");
 			Scanner lector = new Scanner(System.in);
