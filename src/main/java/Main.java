@@ -2633,7 +2633,7 @@ public class Main {
 
 			System.out.println("Factura Procesada");
 			Scanner lector = new Scanner(System.in);
-			String nombre = lector.nextLine();
+			String n = lector.nextLine();
 			lector.close();
 
 		} catch (IOException e) {
