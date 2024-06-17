@@ -545,7 +545,7 @@ public class Main {
 							if (numeroCliente.startsWith("2")) {
 								System.out.println("Factura " + letra + " - Monotributista: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								if (totalNetoGravado > 0) {
 									totalFacturaAMonotributistaPositivos += totalNetoGravado;
 									totalFacturaAMonotributistaPositivosIva += totalIva;
@@ -596,7 +596,7 @@ public class Main {
 							} else if (numeroCliente.startsWith("3") || codigoIva.equalsIgnoreCase("RI")) {
 								System.out.println("Factura " + letra + " - Responsable Inscripto (RI): "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								if (totalNetoGravado > 0) {
 									totalFacturaAResponsableInscriptoPositivos += totalNetoGravado;
 									totalFacturaAResponsableInscriptoPositivosIva += totalIva;
@@ -647,7 +647,7 @@ public class Main {
 							} else if (codigoIva.equalsIgnoreCase("NCA") || exento.startsWith("0") != false) {
 								System.out.println("Factura " + letra + " - Exentos, no Alcanzados, no Gravados: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								if (totalNetoGravado > 0) {
 									totalFacturaAExentosNoAlcanzadosPositivos += totalNetoGravado;
 									totalFacturaAExentosNoAlcanzadosPositivosIva += totalIva;
@@ -739,7 +739,7 @@ public class Main {
 							if (numeroCliente.startsWith("2")) {
 								System.out.println("Factura " + letra + " - Monotributista: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								if (totalNetoGravado > 0) {
 									totalFacturaBMonotributistaPositivos += totalNetoGravado;
 									totalFacturaBMonotributistaPositivosIva += totalIva;
@@ -790,7 +790,7 @@ public class Main {
 									|| exento.startsWith("0") != false) {
 								System.out.println("Factura " + letra + " - Exentos, no Alcanzados, no Gravados: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								if (totalNetoGravado > 0) {
 									totalFacturaBExentosNoAlcanzadosPositivos += totalNetoGravado;
 									totalFacturaBExentosNoAlcanzadosPositivosIva += totalIva;
@@ -841,7 +841,7 @@ public class Main {
 									|| razonSocial.equals("Consumidor Final") || codigoIva.equalsIgnoreCase("CF")) {
 								System.out.println("Factura " + letra + " - Consumidor Final: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								if (totalNetoGravado > 0) {
 									totalFacturaBConsumidorFinalPositivos += totalNetoGravado;
 									totalFacturaBConsumidorFinalPositivosIva += totalIva;
@@ -959,7 +959,7 @@ public class Main {
 							if (numeroCliente.startsWith("2")) {
 								System.out.println("Factura " + letra + " - Monotributista: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								totalFacturaZ_A += totalNetoGravado;
 								totalFacturaZ_A_Iva += totalIva;
 								totalFacturaZ_A21 += totalNetoGravado21;
@@ -1029,7 +1029,7 @@ public class Main {
 							} else if (numeroCliente.startsWith("3") || codigoIva.equalsIgnoreCase("RI")) {
 								System.out.println("Factura " + letra + " - Responsable Inscripto (RI): "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								totalFacturaZ_A += totalNetoGravado;
 								totalFacturaZ_A_Iva += totalIva;
 								totalFacturaZ_A21 += totalNetoGravado21;
@@ -1091,7 +1091,7 @@ public class Main {
 									|| codigoIva.equalsIgnoreCase("CF")) {
 								System.out.println("Factura " + letra + " - Consumidor Final: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								totalFacturaZ_B += totalNetoGravado;
 								totalFacturaZ_B_Iva += totalIva;
 								totalFacturaZ_B21 += totalNetoGravado21;
@@ -1160,7 +1160,7 @@ public class Main {
 							} else {
 								System.out.println("Factura " + letra + " - Exentos, no Alcanzados, no Gravados: "
 										+ formattedTotalNetoGravado.replace(".", ",") + " - IVA: "
-										+ formattedTotalIva.replace(".", ","));
+										+ formattedTotalIva.replace(".", ",") + "\n");
 								totalFacturaZ_B += totalNetoGravado;
 								totalFacturaZ_B_Iva += totalIva;
 								totalFacturaZ_B21 += totalNetoGravado21;
