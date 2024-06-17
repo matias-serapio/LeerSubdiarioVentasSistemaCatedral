@@ -2368,7 +2368,14 @@ public class Main {
 							+ totalFacturaAExentosNoAlcanzadosPositivos + totalFacturaBConsumidorFinalPositivos
 							+ totalFacturaBMonotributistaPositivos + totalFacturaBExentosNoAlcanzadosPositivos)
 					.replace(".", ",");
-
+			String formattedtotalFacturaZAB_ABPositivos = String
+					.format("%.2f",
+							totalFacturaAPositivosFacturaZ_A_Positivos + totalFacturaBPositivosFacturaZ_B_Positivos)
+					.replace(".", ",");
+			String formattedtotalFacturaZAB_ABNegativos = String
+					.format("%.2f",
+							totalFacturaANegativosFacturaZ_A_Negativos + totalFacturaBNegativosFacturaZ_B_Negativos)
+					.replace(".", ",");
 			String formattedtotalFacturaZAB_AB = String
 					.format("%.2f", totalFacturaAFacturaZ_A + totalFacturaBFacturaZ_B).replace(".", ",");
 
@@ -2473,7 +2480,12 @@ public class Main {
 							+ totalFacturaAExentosNoAlcanzadosPositivosIva + totalFacturaBConsumidorFinalPositivosIva
 							+ totalFacturaBMonotributistaPositivosIva + totalFacturaBExentosNoAlcanzadosPositivosIva)
 					.replace(".", ",");
-
+			String formattedtotalFacturaZAB_ABPositivosIva = String.format("%.2f",
+					totalFacturaAPositivosFacturaZ_A_PositivosIva + totalFacturaBPositivosFacturaZ_B_PositivosIva)
+					.replace(".", ",");
+			String formattedtotalFacturaZAB_ABNegativosIva = String.format("%.2f",
+					totalFacturaANegativosFacturaZ_A_NegativosIva + totalFacturaBNegativosFacturaZ_B_NegativosIva)
+					.replace(".", ",");
 			String formattedtotalFacturaZAB_ABIva = String
 					.format("%.2f", totalFacturaAFacturaZ_AIva + totalFacturaBFacturaZ_BIva).replace(".", ",");
 
@@ -2612,7 +2624,10 @@ public class Main {
 
 			System.out.println("Operaciones con CF, MON y EXENTOS NO ALCANZADOS: " + formattedOpCfMonExentos
 					+ " \tIVA\t " + formattedOpCfMonExentosIva);
-
+			System.out.println("Total Facturas A, B y Z (que son A y B) Positivos: "
+					+ formattedtotalFacturaZAB_ABPositivos + " \tIVA\t " + formattedtotalFacturaZAB_ABPositivosIva);
+			System.out.println("Total Facturas A, B y Z (que son A y B) Negativos: "
+					+ formattedtotalFacturaZAB_ABNegativos + " \tIVA\t " + formattedtotalFacturaZAB_ABNegativosIva);
 			System.out.println("Total Facturas A, B y Z (que son A y B): " + formattedtotalFacturaZAB_AB + " \tIVA\t "
 					+ formattedtotalFacturaZAB_ABIva);
 
