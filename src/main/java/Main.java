@@ -1666,7 +1666,7 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA 21:");
+			System.out.println(ANSI_RED + "\nTotales acumulados Neto Gravado con IVA 21:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A 21");
 
@@ -2099,7 +2099,7 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA 10,5:");
+			System.out.println(ANSI_CYAN + "\nTotales acumulados Neto Gravado con IVA 10,5:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A 10,5");
 
@@ -2529,7 +2529,7 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA 27:");
+			System.out.println(ANSI_GREEN + "\nTotales acumulados Neto Gravado con IVA 27:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A 27");
 
@@ -2975,7 +2975,7 @@ public class Main {
 					.format("%.2f", totalFacturaAFacturaZ_AIva + totalFacturaBFacturaZ_BIva).replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA:");
+			System.out.println(ANSI_YELLOW + "\nTotales acumulados Neto Gravado con IVA:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A");
 
@@ -4785,9 +4785,9 @@ public class Main {
 				.replace(".", ",");
 
 		// Mostrar los resultados formateados
-		System.out.println(ANSI_RED + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA 21:");
+		System.out.println(ANSI_RED + "\nTotales acumulados Neto Gravado con IVA 21:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A 21");
 
@@ -5218,9 +5218,9 @@ public class Main {
 
 		// Mostrar los resultados formateados
 
-		System.out.println(ANSI_CYAN + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA 10,5:");
+		System.out.println(ANSI_CYAN + "\nTotales acumulados Neto Gravado con IVA 10,5:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A 10,5");
 
@@ -5645,9 +5645,9 @@ public class Main {
 
 		// Mostrar los resultados formateados
 
-		System.out.println(ANSI_GREEN + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA 27:");
+		System.out.println(ANSI_GREEN + "\nTotales acumulados Neto Gravado con IVA 27:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A 27");
 
@@ -6080,9 +6080,9 @@ public class Main {
 
 		// Mostrar los resultados formateados
 
-		System.out.println(ANSI_YELLOW + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA:");
+		System.out.println(ANSI_YELLOW + "\nTotales acumulados Neto Gravado con IVA:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A");
 
@@ -7855,7 +7855,7 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA 21:");
+			System.out.println(ANSI_RED + "\nTotales acumulados Neto Gravado con IVA 21:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A 21");
 
@@ -8437,7 +8437,7 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA 10,5:");
+			System.out.println(ANSI_CYAN + "\nTotales acumulados Neto Gravado con IVA 10,5:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A 10,5");
 
@@ -9022,7 +9022,7 @@ public class Main {
 					.replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA 27:");
+			System.out.println(ANSI_GREEN + "\nTotales acumulados Neto Gravado con IVA 27:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A 27");
 
@@ -9618,7 +9618,7 @@ public class Main {
 					.format("%.2f", totalFacturaAFacturaZ_AIva + totalFacturaBFacturaZ_BIva).replace(".", ",");
 
 			// Mostrar los resultados formateados
-			System.out.println("\nTotales acumulados Neto Gravado con IVA:");
+			System.out.println(ANSI_YELLOW + "\nTotales acumulados Neto Gravado con IVA:" + ANSI_RESET);
 
 			System.out.println("\nFacturas A");
 
@@ -11586,9 +11586,9 @@ public class Main {
 				.replace(".", ",");
 
 		// Mostrar los resultados formateados
-		System.out.println(ANSI_RED + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA 21:");
+		System.out.println(ANSI_RED + "\nTotales acumulados Neto Gravado con IVA 21:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A 21");
 
@@ -12171,9 +12171,9 @@ public class Main {
 
 		// Mostrar los resultados formateados
 
-		System.out.println(ANSI_CYAN + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA 10,5:");
+		System.out.println(ANSI_CYAN + "\nTotales acumulados Neto Gravado con IVA 10,5:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A 10,5");
 
@@ -12747,9 +12747,9 @@ public class Main {
 
 		// Mostrar los resultados formateados
 
-		System.out.println(ANSI_GREEN + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA 27:");
+		System.out.println(ANSI_GREEN + "\nTotales acumulados Neto Gravado con IVA 27:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A 27");
 
@@ -13334,9 +13334,9 @@ public class Main {
 
 		// Mostrar los resultados formateados
 
-		System.out.println(ANSI_YELLOW + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
+		System.out.println(ANSI_PURPLE + "\nPunto de venta: " + puntoDeVenta + ANSI_RESET);
 
-		System.out.println("\nTotales acumulados Neto Gravado con IVA:");
+		System.out.println(ANSI_YELLOW + "\nTotales acumulados Neto Gravado con IVA:" + ANSI_RESET);
 
 		System.out.println("\nFacturas A");
 
